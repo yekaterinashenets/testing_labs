@@ -1,0 +1,87 @@
+   67  cd D:/мехмат/3\ курс
+   68  git clone git@github.com:yekaterinashenets/testing_labs.git
+   69  cd testing_labs
+   70  mkdir lab2
+   71  touch text1.txt
+   72  rm text1.txt
+   73  cd lab2
+   74  touch text1.txt
+   75  git add text1.txt
+   76  git commit -m "file text1.txt was added"
+   77  vi text1.txt
+   78  git add text1.txt
+   79  git commit -m "file text1.txt was changed"
+   80  touch text2.txt
+   81  git add text2.txt
+   82  git commit -m "file text2.txt was added"
+   83  git checkout -b develop
+   84  touch html1.html
+   85  git add html1.html
+   86  git commit -m "file html1.html was added on develop branch"
+   87  vi html1.html
+   88  git commit -m "file html1.html was changed"
+   89  git add html1.html
+   90  git commit -m "file html1.html was changed"
+   91  git log
+   92  git checkout master
+   93  git log
+   94  git checkout develop
+   95  git checkout master
+   96  git merge develop
+   97  git log
+   98  git status
+   99  git checkout develop
+  100  touch main.css
+  101  git add main.css
+  102  git commit -m "file main.css was added"
+  103  vi main.css
+  104  git add main.css
+  105  git commit -m "file main.css was changed"
+  106  git log
+  107  git checkout master
+  108  vi text2.txt
+  109  git add /
+  110  git add .
+  111  git commit -m "file text2.txt was changed"
+  112  git checkout develop
+  113  git rebase master
+  114  git log
+  115  vi html1.html
+  116  git add .
+  117  git commit -m "file html1.html was changed"
+  118  vi main.css
+  119  git add .
+  120  git commit -m "file main.css was changed"
+  121  git log
+  122  git checkout master
+  123  git cherry-pick 27e855
+  124  git checkout develop
+  125  git log
+  126  git revert b44792
+  127  git log
+  128  history
+  129  git repository browser
+  130  git --help
+  131  browser
+  132  git browser
+  133  GIT Repository Browser
+  134  git checkout master
+  135  touch new.txt
+  136  vi new.txt
+  137  git add new.txt
+  138  git commit -m "file new.txt was added"
+  139  git checkout develop
+  140  ls
+  141  touch new.txt
+  142  vi new.txt
+  143  git add new.txt
+  144  git commit -m "file new.txt was added on develop branch"
+  145  git checkout master
+  146  git merge develop
+  147  git add new.txt
+  148  git commit -m "merged master fixed conflict"
+  149  git checkout develop
+  150  git push origin develop
+  151  git checkout master
+  152  git push origin master
+  153  history
