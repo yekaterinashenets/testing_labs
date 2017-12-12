@@ -1,0 +1,5 @@
+/**/.idea
+/**/node_modules/
+/lab5/chromedriver.exe
+/lab5/selenium-server-standalone-3.8.1.jar
+/lab5/errorShots/
